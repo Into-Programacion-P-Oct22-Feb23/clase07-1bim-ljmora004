@@ -5,23 +5,27 @@
  */
 package ejemplociclowhile;
 
-/**
- *
- * @author reroes
- */
+import java.util.Scanner;
+import java.util.Locale;
+
 public class Ejemplo02 {
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         
-        int limite = 10;
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+        
+        int limite;
         int contador = 1;
+        
+        System.out.println("Ingrese el limite:");
+        limite = entrada.nextInt();
           
         while (contador <= limite){
             System.out.printf("Contador %d\n", contador);
-            
+            contador = contador + 1;
         }
         
     }

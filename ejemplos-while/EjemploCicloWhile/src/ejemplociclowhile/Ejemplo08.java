@@ -23,7 +23,9 @@ public class Ejemplo08 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
 
-        int contador = 0;
+        int contador = 0; // El contador en este caso nos servira para
+                          // saber para cuanto se debe dividir la suma
+                          // y sacar el promedio. 
         double suma_total = 0;
         double promedio_final;
         double calificacion;

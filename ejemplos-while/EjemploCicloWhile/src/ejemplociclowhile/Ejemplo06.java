@@ -29,13 +29,13 @@ public class Ejemplo06 {
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
         // true 
-        while (bandera) {
+        while (bandera == true) {
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
 
-            if (calificacion > 20) {
-                calificacion = 20;
-            }
+            if (calificacion > 20) {  // Es un control para que la nota maxima
+                calificacion = 20;    // sea igual a 20 sin importar si el
+            }                         // usuario ingresa un numero mayor a 20
             suma_total = suma_total + calificacion;
 
             // proceso para salir del ciclo.
